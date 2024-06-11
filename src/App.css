@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+/* src/App.css */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  margin-top: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.MuiStepper-root {
+  margin-bottom: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.MuiCard-root {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+
+
+.form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Styling for each step in the stepper */
+.step-card {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Styling for form inputs */
+.form-input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Styling for the buttons */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-back {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.button-next {
+  background-color: #007bff;
+  color: #fff;
 }
